@@ -40,11 +40,6 @@ Other root-level config files:
 
 ---
 
-## 📷 UI Preview
-
-![Dashboard Preview](https://i.ibb.co/B2DdGkgF/Screenshot-2025-05-23-at-3-31-31-PM.png)
-
----
 
 ## 📌 Features
 
