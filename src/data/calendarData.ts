@@ -1,0 +1,61 @@
+export const calendarData = [
+  { day: 26, isCurrentMonth: false, isToday: false, hasAppointment: false, appointments: [] },
+  { day: 27, isCurrentMonth: false, isToday: false, hasAppointment: false, appointments: [] },
+  { day: 28, isCurrentMonth: false, isToday: false, hasAppointment: false, appointments: [] },
+  { day: 29, isCurrentMonth: false, isToday: false, hasAppointment: false, appointments: [] },
+  { day: 30, isCurrentMonth: false, isToday: false, hasAppointment: false, appointments: [] },
+  { day: 1, isCurrentMonth: true, isToday: false, hasAppointment: false, appointments: [] },
+  { day: 2, isCurrentMonth: true, isToday: false, hasAppointment: false, appointments: [] },
+  { day: 3, isCurrentMonth: true, isToday: false, hasAppointment: false, appointments: [] },
+  { day: 4, isCurrentMonth: true, isToday: false, hasAppointment: false, appointments: [] },
+  { day: 5, isCurrentMonth: true, isToday: false, hasAppointment: false, appointments: [] },
+  { day: 6, isCurrentMonth: true, isToday: false, hasAppointment: false, appointments: [] },
+  { day: 7, isCurrentMonth: true, isToday: false, hasAppointment: true, appointments: ['09:00'] },
+  { day: 8, isCurrentMonth: true, isToday: false, hasAppointment: false, appointments: [] },
+  { day: 9, isCurrentMonth: true, isToday: false, hasAppointment: false, appointments: [] },
+  { day: 10, isCurrentMonth: true, isToday: false, hasAppointment: false, appointments: [] },
+  { day: 11, isCurrentMonth: true, isToday: false, hasAppointment: true, appointments: ['11:00'] },
+  { day: 12, isCurrentMonth: true, isToday: true, hasAppointment: false, appointments: [] },
+  { day: 13, isCurrentMonth: true, isToday: false, hasAppointment: false, appointments: [] },
+  { day: 14, isCurrentMonth: true, isToday: false, hasAppointment: false, appointments: [] },
+  { day: 15, isCurrentMonth: true, isToday: false, hasAppointment: true, appointments: ['13:00'] },
+  { day: 16, isCurrentMonth: true, isToday: false, hasAppointment: false, appointments: [] },
+  { day: 17, isCurrentMonth: true, isToday: false, hasAppointment: false, appointments: [] },
+  { day: 18, isCurrentMonth: true, isToday: false, hasAppointment: false, appointments: [] },
+  { day: 19, isCurrentMonth: true, isToday: false, hasAppointment: false, appointments: [] },
+  { day: 20, isCurrentMonth: true, isToday: false, hasAppointment: true, appointments: ['15:00'] },
+  { day: 21, isCurrentMonth: true, isToday: false, hasAppointment: false, appointments: [] },
+  { day: 22, isCurrentMonth: true, isToday: false, hasAppointment: false, appointments: [] },
+  { day: 23, isCurrentMonth: true, isToday: false, hasAppointment: false, appointments: [] },
+  { day: 24, isCurrentMonth: true, isToday: false, hasAppointment: false, appointments: [] },
+  { day: 25, isCurrentMonth: true, isToday: false, hasAppointment: false, appointments: [] },
+  { day: 26, isCurrentMonth: true, isToday: false, hasAppointment: false, appointments: [] },
+  { day: 27, isCurrentMonth: true, isToday: false, hasAppointment: false, appointments: [] },
+  { day: 28, isCurrentMonth: true, isToday: false, hasAppointment: false, appointments: [] },
+  { day: 29, isCurrentMonth: true, isToday: false, hasAppointment: false, appointments: [] },
+  { day: 30, isCurrentMonth: true, isToday: false, hasAppointment: false, appointments: [] },
+  { day: 31, isCurrentMonth: true, isToday: false, hasAppointment: false, appointments: [] },
+  { day: 1, isCurrentMonth: false, isToday: false, hasAppointment: false, appointments: [] },
+  { day: 2, isCurrentMonth: false, isToday: false, hasAppointment: false, appointments: [] },
+  { day: 3, isCurrentMonth: false, isToday: false, hasAppointment: false, appointments: [] },
+  { day: 4, isCurrentMonth: false, isToday: false, hasAppointment: false, appointments: [] },
+  { day: 5, isCurrentMonth: false, isToday: false, hasAppointment: false, appointments: [] },
+  { day: 6, isCurrentMonth: false, isToday: false, hasAppointment: false, appointments: [] }
+];
+
+export const calendarAppointments = [
+  {
+    id: 1,
+    title: 'Dentist',
+    doctor: 'Dr. Smith',
+    time: '09:00 AM',
+    icon: 'tooth'
+  },
+  {
+    id: 2,
+    title: 'Physiotherapy Appointment',
+    doctor: 'Dr. Johnson',
+    time: '11:30 AM',
+    icon: 'activity'
+  }
+];
