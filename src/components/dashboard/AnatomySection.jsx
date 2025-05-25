@@ -1,7 +1,7 @@
 import { healthIndicators } from '../../data/healthData';
 import './AnatomySection.css';
 
-const AnatomySection = () => {
+function AnatomySection() {
   return (
     <div className="anatomy-card card">
       <div className="anatomy-container">
@@ -10,9 +10,9 @@ const AnatomySection = () => {
             src="https://images.pexels.com/photos/4226219/pexels-photo-4226219.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             alt="Human Anatomy"
           />
-          
+
           {healthIndicators.map((indicator) => (
-            <div 
+            <div
               key={indicator.id}
               className={`health-indicator ${indicator.status}`}
               style={{
@@ -31,6 +31,6 @@ const AnatomySection = () => {
       </div>
     </div>
   );
-};
+}
 
 export default AnatomySection;

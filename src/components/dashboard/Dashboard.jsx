@@ -5,7 +5,7 @@ import UpcomingSchedule from './UpcomingSchedule';
 import ActivityFeed from './ActivityFeed';
 import './Dashboard.css';
 
-const Dashboard = () => {
+function Dashboard() {
   return (
     <div className="dashboard-container">
       <div className="dashboard-grid">
@@ -25,6 +25,6 @@ const Dashboard = () => {
       </div>
     </div>
   );
-};
+}
 
 export default Dashboard;

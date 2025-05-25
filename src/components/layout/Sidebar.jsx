@@ -1,12 +1,19 @@
-import { LayoutDashboard, History, Calendar, CalendarClock, BarChart2, FlaskRound as Flask, MessageSquare, HelpCircle, Settings } from 'lucide-react';
+// Sidebar.jsx
+import {
+  LayoutDashboard,
+  History,
+  Calendar,
+  CalendarClock,
+  BarChart2,
+  FlaskRound as Flask,
+  MessageSquare,
+  HelpCircle,
+  Settings
+} from 'lucide-react';
 import { navigationLinks } from '../../data/navigationLinks';
 import './Sidebar.css';
 
-interface SidebarProps {
-  isOpen: boolean;
-}
-
-const Sidebar: React.FC<SidebarProps> = ({ isOpen }) => {
+function Sidebar({ isOpen }) {
   return (
     <aside className={`sidebar ${isOpen ? 'open' : 'closed'}`}>
       <div className="sidebar-header">
@@ -26,11 +33,11 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen }) => {
       </nav>
     </aside>
   );
-};
+}
 
-const getIcon = (iconName: string) => {
+function getIcon(iconName) {
   const iconProps = { size: 20 };
-  
+
   switch (iconName) {
     case 'dashboard':
       return <LayoutDashboard {...iconProps} />;
@@ -53,6 +60,6 @@ const getIcon = (iconName: string) => {
     default:
       return <LayoutDashboard {...iconProps} />;
   }
-};
+}
 
 export default Sidebar;

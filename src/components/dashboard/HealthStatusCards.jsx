@@ -1,7 +1,8 @@
+// HealthStatusCards.jsx
 import { healthStatusCards } from '../../data/healthData';
 import './HealthStatusCards.css';
 
-const HealthStatusCards = () => {
+function HealthStatusCards() {
   return (
     <div className="health-status-cards">
       {healthStatusCards.map((card) => (
@@ -17,6 +18,6 @@ const HealthStatusCards = () => {
       ))}
     </div>
   );
-};
+}
 
 export default HealthStatusCards;

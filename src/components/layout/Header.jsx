@@ -1,11 +1,8 @@
+// Header.jsx
 import { Search, Bell, Plus } from 'lucide-react';
 import './Header.css';
 
-interface HeaderProps {
-  toggleSidebar: () => void;
-}
-
-const Header: React.FC<HeaderProps> = ({ toggleSidebar }) => {
+function Header({ toggleSidebar }) {
   return (
     <header className="header">
       <div className="header-left">
@@ -16,10 +13,12 @@ const Header: React.FC<HeaderProps> = ({ toggleSidebar }) => {
         </button>
         <h1 className="logo">Healthcare.</h1>
       </div>
+
       <div className="search-container">
         <Search size={18} className="search-icon" />
         <input type="text" placeholder="Search" className="search-input" />
       </div>
+
       <div className="header-right">
         <button className="icon-button notification-btn">
           <Bell size={20} />
@@ -39,6 +38,6 @@ const Header: React.FC<HeaderProps> = ({ toggleSidebar }) => {
       </div>
     </header>
   );
-};
+}
 
 export default Header;

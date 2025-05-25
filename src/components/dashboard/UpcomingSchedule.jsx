@@ -1,9 +1,10 @@
+// UpcomingSchedule.jsx
 import { CalendarClock } from 'lucide-react';
 import { upcomingAppointments } from '../../data/appointmentsData';
 import AppointmentCard from './AppointmentCard';
 import './UpcomingSchedule.css';
 
-const UpcomingSchedule = () => {
+function UpcomingSchedule() {
   // Group appointments by day
   const appointmentsByDay = upcomingAppointments.reduce((acc, appointment) => {
     if (!acc[appointment.day]) {
@@ -11,8 +12,8 @@ const UpcomingSchedule = () => {
     }
     acc[appointment.day].push(appointment);
     return acc;
-  }, {} as Record<string, typeof upcomingAppointments>);
-  
+  }, {}); // ✅ Removed TypeScript type casting
+
   return (
     <div className="upcoming-schedule card">
       <div className="schedule-header">
@@ -21,7 +22,7 @@ const UpcomingSchedule = () => {
         </div>
         <h2>The Upcoming Schedule</h2>
       </div>
-      
+
       <div className="schedule-content">
         {Object.entries(appointmentsByDay).map(([day, appointments]) => (
           <div key={day} className="schedule-day">
@@ -43,6 +44,6 @@ const UpcomingSchedule = () => {
       </div>
     </div>
   );
-};
+}
 
 export default UpcomingSchedule;
